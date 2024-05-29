@@ -1,0 +1,32 @@
+<section id="corpo1">
+  <h1 class="titulo-corpo1">
+      Meião Branco Real Madrid | 2022
+  </h1>
+
+  <div class="container">
+      <div class="image">
+          <img src="../../../../assets/acessorios/COL-7413-014_zoom1.webp" alt="Imagem Grande" class="imagem-compra">
+      </div>
+      <div class="text">
+          <h2 class="textos-h2">Meião Branco Real Madrid | 2022</h2>
+          <p class="textos-precos">R$259,90</p>
+
+          <p class="textos">Calcule o frete:</p>
+          <input type="number" name="CEP" id="texto-cep">
+
+          <p class="textos">Tamanho</p>
+          <div class="tamanhos-camisa">
+              <button class="tamanho-camisa" [class.selected]="tamanhoSelecionado === 'PP'" (click)="selecionarTamanho('PP')">PP</button>
+              <button class="tamanho-camisa" [class.selected]="tamanhoSelecionado === 'P'" (click)="selecionarTamanho('P')">P</button>
+              <button class="tamanho-camisa" [class.selected]="tamanhoSelecionado === 'M'" (click)="selecionarTamanho('M')">M</button>
+              <button class="tamanho-camisa" [class.selected]="tamanhoSelecionado === 'G'" (click)="selecionarTamanho('G')">G</button>
+              <button class="tamanho-camisa" [class.selected]="tamanhoSelecionado === 'GG'" (click)="selecionarTamanho('GG')">GG</button>
+          </div>
+
+          <div class="compra-confirmada">
+              <button class="adicionar-carrinho">Adicionar ao carrinho <img src="https://cdn-icons-png.flaticon.com/512/126/126510.png" alt="" width="20em"></button>
+              <button class="comprar-agora">Comprar agora</button>
+          </div>
+      </div>
+  </div>
+</section>

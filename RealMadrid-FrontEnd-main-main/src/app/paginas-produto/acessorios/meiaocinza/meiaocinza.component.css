@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide a tela em duas colunas iguais */
+    gap: 40px; /* Espaçamento entre as colunas */
+    margin-top: 5em;
+    margin-bottom: 4em;
+}
+.image {
+    grid-column: 1; /* A imagem vai ocupar a primeira coluna */
+    margin-left: 1em;
+}
+
+.imagem-compra {
+    border: 6px solid black;
+    border-radius: 12px;
+    width: 100em;
+}
+
+.text {
+    grid-column: 2; /* O texto vai ocupar a segunda coluna */
+    margin-right: 6em;
+}
+/* Estilos adicionais apenas para melhorar a aparência */
+.image img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da coluna */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.textos-precos {
+    background-color: #DDDDDD;
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 1.2em;
+    margin: 1em 0 1em 0;
+    padding: 1em;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+    font-size: 2em;
+}
+
+#texto-cep {
+    padding: 1em;
+    border: 3px solid black;
+    margin-bottom: 1em;
+}
+
+.tamanho-camisa {
+    padding: 1em;
+    background-color: white;
+    border: 2px solid #B5C0D0;
+    cursor: pointer;
+    gap: 2em;
+}
+
+.tamanho-camisa:hover {
+    color: #DD761C;
+    border: 2px solid #DD761C;
+}
+
+.tamanho-camisa.selected {
+    background-color:#DD761C ;
+    color: white;
+}
+
+.adicionar-carrinho {
+    margin: 3em 1em 0 0;
+    background-color: white;
+    border: 3px solid black;
+    padding: 1em;
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.adicionar-carrinho:hover {
+    background-color: #B5C0D0;
+}
+
+.comprar-agora {
+    margin: 3em 1em 0 0;
+    background-color: white;
+    border: 3px solid black;
+    padding: 1em;
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.comprar-agora:hover {
+    background-color: #B5C0D0;
+}
+
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+
+:root {
+    --cor-de-fundo: #00215E;
+    --cor-da-fonte: #FEFBF6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 200vh;
+    background-color: #EEEDEB;
+}
+
+.quebralinha {
+    border: 1px solid #B5C0D0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: 7em;
+}
+
+.quebralinha1 {
+    border: 1px solid #00215E;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Header*/
+
+#header-pagina-principal {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cor-de-fundo);
+    position: fixed;
+    width: 100%;
+}
+
+.imagem-header {
+    width: 100px;
+    height: auto;
+    margin: 0.4em;
+}
+
+#cabecalho-header {
+    position: absolute;
+    right: 0; /* Posiciona o elemento à direita */
+    top: 50%; /* Alinha verticalmente ao meio */
+    transform: translateY(-50%);
+    padding-right: 6em;
+}
+
+.links-header {
+    text-decoration: none;
+    padding-left: 1em;
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 1.3em;
+    color: var(--cor-da-fonte);
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+.links-header:hover {
+    color: #DD761C;
+}
+
+.carrinho {
+    position: absolute;
+    right: 0;
+    margin-top: 1.5em;
+    margin-right: 2em;
+    padding: 0.4em;
+    background-color: white;
+    width: 1.6em;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.links-carrinho {
+    cursor: pointer;
+}
+
+/* Corpo da página */
+
+#corpo1 {
+    overflow: hidden;
+}
+
+.titulo-corpo1 {
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* aside {
+    font-family: "Radio Canada Big", sans-serif;
+    padding: 20px;
+    float: left;
+    width: 100px;
+    border-right: 4px solid;
+}
+
+aside a{
+    margin-bottom: 1em;
+} */
+
+.produtos-navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.produtos-nav {
+    font-size: 1.1em;
+    font-family: "Radio Canada Big", sans-serif;
+    margin: 0 2em 0 2em;
+    text-decoration: none;
+    color: black;
+}
+
+.botao-nav {
+    background: none;
+    border: none;
+    font-size: 1.1em;
+    font-family: "Radio Canada Big", sans-serif;
+    margin: 0 2em 0 2em;
+    cursor: pointer;
+}
+
+.bordas {
+    border: 3px solid #00215E;
+    padding: 0.6em;
+    border-radius: 10px;
+}
+
+.produtos-nav:hover {
+    color: #DD761C;
+}
+
+.titulo-de-destaque {
+    font-family: "Radio Canada Big", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.3em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+.produtos-loja-destaques {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    padding: 1em;
+}
+
+.destaques-semanais {
+    margin-top: 1em;
+    padding: 1em;
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12em;
+}
+
+.destaque {
+    font-family: "Radio Canada Big", sans-serif;
+    background-color: white;
+    padding: 1em 0 0 2em;
+    font-size: 1.2em;
+}
+
+.imagem-produto {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 15em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.produtos {
+    font-family: "Radio Canada Big", sans-serif;
+    flex-direction: column;
+    border: 2px solid #151515;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #00215E;
+}
+
+.titulo-atendimento {
+    color: white;
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+.atendimento {
+    color: white;
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.atendimento-conteudo:hover {
+    color: #DD761C;
+}
+
+.titulo-categoria {
+    text-align: center;
+    margin-top: 1em;
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 1.2em;
+    padding-bottom: 1em;
+    color: white;
+}
+
+/**/
+.textos-h2 {
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 1.4em;
+}
+
+.textos {
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 1.2em;
+}

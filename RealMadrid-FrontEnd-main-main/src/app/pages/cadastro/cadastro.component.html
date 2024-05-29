@@ -1,0 +1,17 @@
+<section id="corpo1">
+    <h1 class="titulo-corpo1">
+        Se cadastre no nosso site!
+    </h1>
+
+    <div class="formulario">
+        <form class="form">                
+            <input type="text" #nome value="{{ usuario?.nome }}" placeholder="Nome..." class="input-form">
+            <input type="password" #senha value="{{ usuario?.senha }}" placeholder="Senha..." class="input-form">
+            <input type="text" #cpf value="{{ usuario?.cpf }}" placeholder="999.999.999-99" class="input-form">
+            <input type="date" #dataNascimento value="{{ usuario?.dataNascimento }}" class="input-form">
+            <input type="button" value="cadastrar" class="btn" (click)="postUsuario(nome.value, senha.value, cpf.value, dataNascimento.value)" *ngIf="!usuario" class="botao-form">
+
+        </form>
+    </div>
+
+</section>

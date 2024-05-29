@@ -1,0 +1,14 @@
+<h1 class="titulo-corpo1">
+    Produtos da nossa loja
+</h1>
+<section id="corpo1">
+    <div id="produtos-container" *ngFor="let produto of produtos">
+        <a [href]="produto.linkimagem" class="links">
+            <div class="produto">
+                <img [src]="produto.imagem" [alt]="produto.nome" class="imagem-produto">
+                <h3 class="nome-produto">{{produto.nome}}</h3>
+                <p class="preco-produto">R${{produto.preco}}</p>
+            </div>
+        </a>
+    </div>
+</section>
