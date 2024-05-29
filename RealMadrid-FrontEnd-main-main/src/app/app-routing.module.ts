@@ -29,6 +29,7 @@ import { CanecaComponent } from './paginas-produto/acessorios/caneca/caneca.comp
 import { CopoRealMadridComponent } from './paginas-produto/acessorios/copo-real-madrid/copo-real-madrid.component';
 import { GarrafaComponent } from './paginas-produto/acessorios/garrafa/garrafa.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
+import { ListarComponent } from './pages/listar/listar.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: 'produtos', component: ProdutosComponent},
   { path: 'carrinho', component: CarrinhoComponent},
   { path: 'contato', component: ContatoComponent},
+  { path: 'listar', component: ListarComponent},
   { path: 'cadastro', component: CadastroComponent},
   { path: 'real2010', component: CamisaReal2010Component},
   { path: 'real2011', component: CamisaReal2011Component},

@@ -8,6 +8,23 @@
     margin-bottom: 1em;
 }
 
+.links-cadastro {
+    text-decoration: none;
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 1.3em;
+    color: black;
+    margin-left: 1em;
+    background-color: #DD761C;
+    padding: 0.6em;
+    border-radius: 10px;
+}
+
+.links-cadastro:hover {
+    color: #DD761C;
+    text-decoration: underline;
+    background-color: black;
+}   
+
 .input {
     border-style: none;
 }

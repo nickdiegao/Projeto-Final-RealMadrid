@@ -1,0 +1,20 @@
+<table class="container">
+    <thead class="container-grid1">
+        <tr class="lista1">
+            <th class="lista-informacao">ID</th>
+            <th class="lista-informacao">Nome</th>
+            <th class="lista-informacao">Senha</th>
+            <th class="lista-informacao">CPF</th>
+            <th class="lista-informacao">Data de Nascimento</th>
+        </tr>
+    </thead>
+    <tbody class="container-grid2">
+        <tr *ngFor="let usuario of usuarios" class="lista">
+            <td #id class="lista-usuarios">{{usuario.id}}</td>
+            <td class="lista-usuarios">{{usuario.nome}}</td>
+            <td class="lista-usuarios">{{usuario.senha}}</td>
+            <td class="lista-usuarios">{{usuario.cpf}}</td>
+            <td class="lista-usuarios">{{usuario.dataNascimento}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -35,6 +35,7 @@ import { CopoRealMadridComponent } from './paginas-produto/acessorios/copo-real-
 import { GarrafaComponent } from './paginas-produto/acessorios/garrafa/garrafa.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ListarComponent } from './pages/listar/listar.component';
 
 
 @NgModule({
@@ -71,6 +72,7 @@ import { HttpClientModule } from '@angular/common/http';
     CopoRealMadridComponent,
     GarrafaComponent,
     CadastroComponent,
+    ListarComponent,
 
   ],
   imports: [
