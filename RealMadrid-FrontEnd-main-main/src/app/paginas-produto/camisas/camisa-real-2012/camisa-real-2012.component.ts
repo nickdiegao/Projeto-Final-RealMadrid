@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { ViaCEPService } from '../../../via-cep.service';
 
 @Component({
   selector: 'app-camisa-real-2012',
@@ -13,10 +13,7 @@ export class CamisaReal2012Component {
     this.tamanhoSelecionado = tamanho;
   }
 
-  constructor(private httpClient: HttpClient) { }
-  getViaCEPService(cep: string = '') {
-    return this.httpClient.get(`https://viacep.com.br/ws/${cep}/json/`)
-  }
+  constructor(private viaCEPService: ViaCEPService) { }
 
   areaBuscarCEP: string = ''
   areaBusca: any = {
@@ -27,7 +24,7 @@ export class CamisaReal2012Component {
   }
 
   buscarCEP() {
-    this.getViaCEPService(this.areaBuscarCEP)
+    this.viaCEPService.getViaCEPService(this.areaBuscarCEP)
     .subscribe((value) => {
       this.areaBusca.logradouro = JSON.parse(JSON.stringify(value)) ['logradouro'];
       this.areaBusca.bairro = JSON.parse(JSON.stringify(value)) ["bairro"];
