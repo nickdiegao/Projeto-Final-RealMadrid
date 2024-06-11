@@ -12,7 +12,14 @@
             <p class="textos-precos">R$259,90</p>
 
             <p class="textos">Calcule o frete:</p>
-            <input type="number" name="CEP" id="texto-cep">
+                <input type="text" [(ngModel)]="areaBuscarCEP" placeholder="Digite o CEP" id="texto-cep"/>
+                <button (click)="buscarCEP()" class="botao-form">Buscar CEP</button>
+                <div *ngIf="areaBusca.logradouro">
+                  <p class="cep-produto">Logradouro: {{ areaBusca.logradouro }}</p>
+                  <p class="cep-produto">Bairro: {{ areaBusca.bairro }}</p>
+                  <p class="cep-produto">Localidade: {{ areaBusca.localidade }}</p>
+                  <p class="cep-produto">UF: {{ areaBusca.uf }}</p>
+                </div>
 
             <p class="textos">Tamanho</p>
             <div class="tamanhos-camisa">

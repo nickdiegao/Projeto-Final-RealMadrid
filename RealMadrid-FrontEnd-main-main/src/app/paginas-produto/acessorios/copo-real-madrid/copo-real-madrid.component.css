@@ -7,11 +7,42 @@
     margin-top: 5em;
     margin-bottom: 4em;
 }
+.botao-form {
+    width: 18%;
+    padding: 0.6em;
+    font-family: "Radio Canada Big", sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cep-produto {
+    font-size: 1.2em;
+    font-family: "Radio Canada Big", sans-serif;
+}
 .image {
     grid-column: 1; /* A imagem vai ocupar a primeira coluna */
     margin-left: 1em;
 }
+.botao-form {
+    width: 18%;
+    padding: 0.6em;
+    font-family: "Radio Canada Big", sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    margin: 0 0 0 0.5em;
+    cursor: pointer;
+    border-radius: 10px;
+}
 
+.cep-produto {
+    font-size: 1.2em;
+    font-family: "Radio Canada Big", sans-serif;
+}
 .imagem-compra {
     border: 6px solid black;
     border-radius: 12px;

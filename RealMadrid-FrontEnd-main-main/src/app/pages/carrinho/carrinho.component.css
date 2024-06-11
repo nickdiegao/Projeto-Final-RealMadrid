@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Radio Canada Big", sans-serif;
+}
+
+body{
+
+    background: #f6f6f6;
+
+     button{
+        cursor: pointer;
+     }
+    
+    .header-comeco{
+        background: #111;
+        color: white;
+        font-size: 24px;
+        padding: 20px;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+    main{
+        background: #f6f6f6;
+        
+    }
+    
+    main .page-title{
+        background: #fff;
+        font-size: 40px;
+        padding: 50px 0;
+        text-align: center;
+    
+    }
+    
+    main content{
+        display: flex;
+    }
+    
+    
+    section{
+        flex: 1;
+    }
+    
+    aside{
+       min-width: 250px;
+    }
+}
+
+.header-final {
+    font-size: 32px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+aside{
+    .box{
+        border: 1px solid #ccc;
+
+       background: #ddd;
+
+       header{
+        padding: 15px 20px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+        
+        .info{
+            padding: 20px;
+            > div{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        footer{
+            padding: 20px;
+            background: #ccc;
+            font-size: 18px;
+        }
+       }
+    }
+ 
+    button{
+     border: 0;
+     padding: 15px 10px;
+     color: white;
+     background: black;
+     display: block;
+     text-transform: uppercase;
+     letter-spacing: 1x;
+     border-radius: 9px;
+    }
+  }
+
+
+main table{
+    width: 100%;
+    thead{
+        tr {
+            border-bottom: 3px solid #eee;
+            th {
+                text-align: left;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                text-transform: uppercase;
+                color: #666;
+            }
+        }
+        tbody{
+            tr{
+                border-bottom: 3px solid #eee;
+
+                td{
+                    padding: 30px 0 ;
+                    
+                }
+            };
+
+        }
+    }
+}
+
+.product{
+    display: flex;
+    align-items: center;
+
+    img{
+      border-radius: 6px;
+      width: 120px;
+      height: 120px;
+    }
+
+    .info{
+      margin-left: 20px;
+    }
+
+    .name{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .category{
+       color: #666;
+    }
+}
+
+.qty{
+    background: #eee;
+    display: inline-flex;
+    padding: 0 0;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30px;
+    span {
+        margin: 0 10px;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        background: transparent;
+        border: 0;
+        padding: 0 10px;
+        font-size: 20px;
+        height: 100%;
+
+    }
+}
+
+.remove{
+    background: #ccc;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}

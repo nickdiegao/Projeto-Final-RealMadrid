@@ -36,6 +36,7 @@ import { GarrafaComponent } from './paginas-produto/acessorios/garrafa/garrafa.c
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ListarComponent } from './pages/listar/listar.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -78,7 +79,8 @@ import { ListarComponent } from './pages/listar/listar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
